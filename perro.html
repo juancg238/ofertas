@@ -61,7 +61,14 @@ footer{text-align:center;font-size:14px;color:var(--muted);padding:30px 16px 90p
 .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,253,249,.97);border-top:1px solid var(--line);padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:9}
 .sticky b{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--orange-d)}
 .sticky .btn{padding:12px 22px;font-size:17px}
-</style></head>
+</style><!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2260347131428457');fbq('track','PageView');fbq('track','ViewContent',{content_name:'El Camino del Perro',value:17,currency:'EUR'});
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="pay.hotmart.com"]');if(a){fbq('track','InitiateCheckout',{content_name:'El Camino del Perro',value:17,currency:'EUR'});}});
+</script>
+<!-- End Meta Pixel -->
+</head>
 <body>
 <div class="top">🐾 Libro interactivo · PDF para el móvil o para imprimir · Letra grande</div>
 
