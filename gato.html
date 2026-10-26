@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Camino del Gato · 30 días para entender de verdad a tu gato</title>
+<meta name="description" content="Libro interactivo de 30 días con retos, curiosidades y consejos para entender a tu gato y hacerle más feliz. PDF para móvil o para imprimir.">
+<meta property="og:title" content="El Camino del Gato · 30 días para entender de verdad a tu gato">
+<meta property="og:description" content="Cada día, algo nuevo sobre tu gato. Retos, curiosidades y cuidados en un libro interactivo de 30 días.">
+<meta property="og:image" content="https://juancg238.github.io/ofertas/img/g1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f8f3f8;--card:#fffdf9;--brown:#4a2f63;--text:#2f2340;--muted:#7a6352;--orange:#e88a3c;--orange-d:#c96f24;--teal:#1f5c6b;--line:#e6dcef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font:18px/1.65 Nunito,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--brown);line-height:1.2}
+h1{font-size:clamp(30px,7vw,46px);margin:0 0 14px}
+h2{font-size:clamp(25px,5.5vw,34px);margin:0 0 14px;text-align:center}
+h3{font-size:21px;margin:0 0 6px}
+.top{background:var(--brown);color:#fff;text-align:center;padding:9px 16px;font-weight:700;font-size:15px}
+.hero{position:relative;color:#fff;min-height:520px;display:flex;align-items:flex-end;background:#3a2716}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,25,12,.05) 20%,rgba(40,25,12,.85) 85%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:34px;padding-top:120px}
+.hero h1{color:#fff}
+.hero p{font-size:19px;margin:0 0 20px;max-width:560px}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;font-size:19px;padding:16px 28px;border-radius:999px;box-shadow:0 10px 24px rgba(201,111,36,.35);text-align:center}
+.btn:hover{background:var(--orange-d)}
+.btn.block{display:block;width:100%}
+.mini{font-size:14px;opacity:.9;margin-top:10px}
+section{padding:46px 0}
+.lead{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 26px}
+.qs{display:grid;gap:12px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 18px;font-weight:700;display:flex;gap:12px;align-items:center}
+.q span{font-size:24px}
+.split{display:grid;gap:22px;align-items:center}
+@media(min-width:700px){.split{grid-template-columns:1fr 1fr}}
+.round{border-radius:22px;box-shadow:0 14px 30px rgba(91,58,34,.18)}
+.days{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(min-width:700px){.days{grid-template-columns:repeat(4,1fr)}}
+.day{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+.day b{display:block;font-size:30px}
+.day small{color:var(--muted);font-size:15px}
+.pages{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.pages img{border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 18px rgba(91,58,34,.12)}
+ul.check{list-style:none;padding:0;margin:0}
+ul.check li{padding:9px 0 9px 36px;position:relative;border-bottom:1px dashed var(--line)}
+ul.check li:before{content:"✓";position:absolute;left:2px;top:11px;width:24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-size:14px;font-weight:800;line-height:24px;text-align:center}
+.alt{background:#f1e8f5}
+.offer{background:var(--card);border:2px solid var(--orange);border-radius:26px;padding:26px 20px;text-align:center;box-shadow:0 18px 40px rgba(91,58,34,.14)}
+.offer img{width:62%;max-width:280px;margin:0 auto 16px;border-radius:14px;box-shadow:0 14px 28px rgba(91,58,34,.25)}
+.price{font-family:Fraunces,Georgia,serif;font-size:58px;color:var(--orange-d);line-height:1;margin:6px 0}
+.offer ul.check{text-align:left;margin:18px 0 22px}
+.guar{display:flex;gap:14px;align-items:center;background:#fff7ee;border:1px solid var(--line);border-radius:18px;padding:16px;margin-top:18px;text-align:left}
+.guar span{font-size:34px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer}
+footer{text-align:center;font-size:14px;color:var(--muted);padding:30px 16px 90px}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,253,249,.97);border-top:1px solid var(--line);padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:9}
+.sticky b{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--orange-d)}
+.sticky .btn{padding:12px 22px;font-size:17px}
+</style><!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2260347131428457');fbq('track','PageView');fbq('track','ViewContent',{content_name:'El Camino del Gato',value:17,currency:'EUR'});
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="pay.hotmart.com"]');if(a){fbq('track','InitiateCheckout',{content_name:'El Camino del Gato',value:17,currency:'EUR'});}});
+</script>
+<!-- End Meta Pixel -->
+</head>
+<body>
+<div class="top">🐾 Libro interactivo · PDF para el móvil o para imprimir · Letra grande</div>
+
+<header class="hero">
+  <img src="img/gato_hero.jpg" alt="Gato tranquilo en casa">
+  <div class="wrap">
+    <h1>¿Sabes de verdad lo que siente tu gato?</h1>
+    <p>Descubre en 30 días lo que todavía no sabes de tu mejor amigo: qué significa su ronroneo y su cola, qué le estresa sin que te des cuenta y cómo saber si es feliz.</p>
+    <a class="btn" href="#comprar">Quiero empezar el camino</a>
+    <div class="mini">Pago único de 17 € · Descarga inmediata · Garantía de 15 días</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>¿Te has preguntado alguna vez…?</h2>
+    <div class="qs">
+      <div class="q"><span>🐱</span>¿Por qué amasa con las patas o te trae «regalos»?</div>
+      <div class="q"><span>👃</span>¿Cómo ve en la oscuridad y cómo huele el mundo?</div>
+      <div class="q"><span>⚠️</span>¿Qué plantas y alimentos de casa son peligrosos para él?</div>
+      <div class="q"><span>💛</span>¿Cómo reconocer el estrés, la tristeza o el dolor?</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <img class="round" src="img/gato_abrazo.jpg" alt="Abrazo a un gato">
+    <div>
+      <h2 style="text-align:left">Un camino de 30 días, paso a paso</h2>
+      <p><b>El Camino del Gato</b> es un libro interactivo dividido en 6 estaciones. Cada día descubres algo nuevo sobre tu gato, en pocos minutos y sin teoría aburrida.</p>
+      <p>Las respuestas de cada reto forman una <b>frase secreta</b> que descubrirás el último día.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cada día incluye</h2>
+    <div class="days">
+      <div class="day"><b>📖</b>Una lección<br><small>corta y clara</small></div>
+      <div class="day"><b>💡</b>¿Sabías que…?<br><small>curiosidades reales</small></div>
+      <div class="day"><b>🏡</b>Una idea práctica<br><small>para mejorar su vida</small></div>
+      <div class="day"><b>🧩</b>Un reto<br><small>y una letra secreta</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Así es por dentro</h2>
+    <p class="lead">Diseño cuidado, fotos y letra grande. Se lee cómodo en el móvil y queda precioso impreso.</p>
+    <div class="pages">
+      <img src="img/gpag1-01.jpg" alt="Portada interior">
+      <img src="img/gpag7-07.jpg" alt="Estación 1: Bienvenido a casa">
+      <img src="img/gpag11-11.jpg" alt="Una página del camino">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2 style="text-align:left">Lo que vas a descubrir</h2>
+      <ul class="check">
+        <li>Cómo ve, oye y huele tu gato</li>
+        <li>Qué significan su cola, sus orejas y su ronroneo</li>
+        <li>Por qué amasa, se esconde o te trae «regalos»</li>
+        <li>Las plantas y alimentos de casa que son peligrosos</li>
+        <li>Cómo jugar con él para que esté tranquilo y feliz</li>
+        <li>Cómo reconocer estrés, tristeza o dolor</li>
+      </ul>
+    </div>
+    <img class="round" src="img/gato_ojos.jpg" alt="Mirada de un gato">
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Y además</h2>
+    <ul class="check" style="max-width:560px;margin:0 auto">
+      <li>Una medalla al terminar cada estación</li>
+      <li>Ficha de tu gato para rellenar</li>
+      <li>La promesa del cuidador</li>
+      <li>Guías rápidas para pegar en la nevera</li>
+      <li>Información comprobada en fuentes veterinarias</li>
+    </ul>
+  </div>
+</section>
+
+<section id="comprar">
+  <div class="wrap">
+    <div class="offer">
+      <img src="img/g1.jpg" alt="Portada de El Camino del Gato">
+      <h2>El Camino del Gato</h2>
+      <p style="margin:0;color:var(--muted)">30 días para descubrir lo que aún no sabes de tu gato</p>
+      <div class="price">17 €</div>
+      <div style="color:var(--muted);font-size:15px">Pago único · IVA incluido · PDF de 56 páginas</div>
+      <ul class="check">
+        <li>Acceso inmediato después del pago</li>
+        <li>Para leer en el móvil, la tablet o imprimir</li>
+        <li>Pago seguro con tarjeta a través de Hotmart</li>
+      </ul>
+      <a class="btn block" href="CHECKOUT_GATO">Sí, quiero El Camino del Gato</a>
+      <div class="guar"><span>🛡️</span><div><b>Garantía de 15 días.</b> Si no te convence, pides la devolución desde Hotmart y te devolvemos el dinero.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Cómo lo recibo?</summary><p>Justo después del pago, Hotmart te envía un correo con el acceso para descargar el PDF. También lo tienes siempre en hotmart.com, en «Mis compras».</p></details>
+    <details><summary>¿Sirve para cualquier gato?</summary><p>Sí. Es para cualquier gato, de interior o con salida, tanto si acaba de llegar a casa como si lleva años contigo.</p></details>
+    <details><summary>¿Necesito saber de adiestramiento?</summary><p>No. Está escrito de forma sencilla, con un tema corto cada día.</p></details>
+    <details><summary>¿Sustituye al veterinario?</summary><p>No. Es una guía para conocer y cuidar mejor a tu gato. Ante cualquier problema de salud, consulta siempre con tu veterinario.</p></details>
+    <details><summary>¿Y si no me gusta?</summary><p>Tienes 15 días de garantía para pedir la devolución.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <img class="round" src="img/gato_ventana.jpg" alt="Gato junto a la ventana" style="margin:0 auto 22px">
+    <h2>Él te lo da todo. Dedícale 30 días.</h2>
+    <a class="btn" href="CHECKOUT_GATO">Empezar el camino por 17 €</a>
+  </div>
+</section>
+
+<footer>Ediciones Faro Claro · Pago seguro procesado por Hotmart<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</footer>
+
+<div class="sticky"><b>17 €</b><a class="btn" href="CHECKOUT_GATO">Comprar ahora</a></div>
+</body></html>
