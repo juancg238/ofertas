@@ -117,7 +117,7 @@ footer{{text-align:center;font-size:13px;color:var(--muted);margin-top:26px}}
 {widget}
     </div>
     <p class="note">Se añade a tu compra con un clic, sin volver a meter la tarjeta.</p>
-    <div class="guar"><span>🛡️</span><div><b>Garantía de 15 días.</b> Si no te convence, te devolvemos el dinero.</div></div>
+    <div class="guar"><span>🛡️</span><div><b>Garantía de 7 días.</b> Si no te convence, te devolvemos el dinero.</div></div>
   </div>
   <footer>Ediciones Faro Claro · Pago seguro procesado por Hotmart</footer>
 </div>
