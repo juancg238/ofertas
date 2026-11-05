@@ -1,203 +1,270 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>El idioma secreto de tu perro · 30 días para entender de verdad a tu perro</title>
-<meta name="description" content="Libro interactivo de 30 días con retos, curiosidades y consejos para entender a tu perro y hacerle más feliz. PDF para móvil o para imprimir.">
-<meta property="og:title" content="El idioma secreto de tu perro · 30 días para entender de verdad a tu perro">
-<meta property="og:description" content="Cada día, algo nuevo sobre tu mejor amigo. Retos, curiosidades y cuidados en un libro interactivo de 30 días.">
+<title>El idioma secreto de tu perro · 30 días para entender a tu perro</title>
+<meta name="description" content="Libro de 30 días para descubrir lo que aún no sabes de tu perro: su cola, su olfato, el estrés y cómo hacerle feliz. PDF con fotos y letra grande.">
+<meta property="og:title" content="El idioma secreto de tu perro">
+<meta property="og:description" content="30 días para descubrir lo que aún no sabes de tu mejor amigo.">
 <meta property="og:image" content="https://juancg238.github.io/ofertas/img/p1.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#fbf5ec;--card:#fffdf9;--brown:#5b3a22;--text:#3d2a1c;--muted:#7a6352;--orange:#e88a3c;--orange-d:#c96f24;--teal:#1f5c6b;--line:#ecdcc6}
+@font-face{font-family:Bricolage;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:Bricolage;src:url(fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Instrument;src:url(fonts/instrument-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Instrument;src:url(fonts/instrument-sans-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Instrument;src:url(fonts/instrument-sans-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:Instrument;src:url(fonts/instrument-sans-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+/* Layout: photo-led story page in the book's own teal + orange; one memorable device = the "frase secreta" letter strip */
+:root{
+ color-scheme:light;
+ --sky:#F2F6F6; --teal:#1E5465; --teal-d:#123844; --ink:#16323B; --mute:#557079;
+ --orange:#E8873A; --orange-d:#C96D22; --sand:#FFF3E6; --line:#D9E4E6;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--text);font:18px/1.65 Nunito,system-ui,sans-serif;overflow-x:hidden}
-img{max-width:100%;display:block}
-.wrap{max-width:720px;margin:0 auto;padding:0 16px}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--brown);line-height:1.2}
-h1{font-size:clamp(30px,7vw,46px);margin:0 0 14px}
-h2{font-size:clamp(25px,5.5vw,34px);margin:0 0 14px;text-align:center}
-h3{font-size:21px;margin:0 0 6px}
-.top{background:var(--brown);color:#fff;text-align:center;padding:9px 16px;font-weight:700;font-size:15px}
-.hero{position:relative;color:#fff;min-height:520px;display:flex;align-items:flex-end;background:#3a2716}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,25,12,.05) 20%,rgba(40,25,12,.85) 85%)}
-.hero .wrap{position:relative;z-index:1;padding-bottom:34px;padding-top:120px}
-.hero h1{color:#fff}
-.hero p{font-size:19px;margin:0 0 20px;max-width:560px}
-.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;font-size:19px;padding:16px 28px;border-radius:999px;box-shadow:0 10px 24px rgba(201,111,36,.35);text-align:center}
-.btn:hover{background:var(--orange-d)}
-.btn.block{display:block;width:100%}
-.mini{font-size:14px;opacity:.9;margin-top:10px}
-section{padding:46px 0}
-.lead{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 26px}
-.qs{display:grid;gap:12px}
-.q{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 18px;font-weight:700;display:flex;gap:12px;align-items:center}
-.q span{font-size:24px}
-.split{display:grid;gap:22px;align-items:center}
-@media(min-width:700px){.split{grid-template-columns:1fr 1fr}}
-.round{border-radius:22px;box-shadow:0 14px 30px rgba(91,58,34,.18)}
-.days{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-@media(min-width:700px){.days{grid-template-columns:repeat(4,1fr)}}
-.day{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
-.day b{display:block;font-size:30px}
-.day small{color:var(--muted);font-size:15px}
-.pages{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-.pages img{border-radius:10px;border:1px solid var(--line);box-shadow:0 8px 18px rgba(91,58,34,.12)}
-ul.check{list-style:none;padding:0;margin:0}
-ul.check li{padding:9px 0 9px 36px;position:relative;border-bottom:1px dashed var(--line)}
-ul.check li:before{content:"✓";position:absolute;left:2px;top:11px;width:24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-size:14px;font-weight:800;line-height:24px;text-align:center}
-.alt{background:#f6ecdf}
-.offer{background:var(--card);border:2px solid var(--orange);border-radius:26px;padding:26px 20px;text-align:center;box-shadow:0 18px 40px rgba(91,58,34,.14)}
-.offer img{width:62%;max-width:280px;margin:0 auto 16px;border-radius:14px;box-shadow:0 14px 28px rgba(91,58,34,.25)}
-.price{font-family:Fraunces,Georgia,serif;font-size:58px;color:var(--orange-d);line-height:1;margin:6px 0}
-.offer ul.check{text-align:left;margin:18px 0 22px}
-.guar{display:flex;gap:14px;align-items:center;background:#fff7ee;border:1px solid var(--line);border-radius:18px;padding:16px;margin-top:18px;text-align:left}
-.guar span{font-size:34px}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
-summary{font-weight:800;cursor:pointer}
-footer{text-align:center;font-size:14px;color:var(--muted);padding:30px 16px 90px}
-.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,253,249,.97);border-top:1px solid var(--line);padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:9}
-.sticky b{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--orange-d)}
-.sticky .btn{padding:12px 22px;font-size:17px}
-</style><!-- Meta Pixel -->
+body{margin:0;background:var(--sky);color:var(--ink);font:18px/1.6 Instrument,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.read{max-width:660px}
+h1,h2,h3{font-family:Bricolage,Instrument,sans-serif;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,6vw,70px);line-height:1;font-weight:800}
+h2{font-size:clamp(30px,4.2vw,48px);line-height:1.06;font-weight:800}
+h3{font-size:22px;line-height:1.2;font-weight:700}
+p{margin:0 0 1em}
+.lead{font-size:clamp(19px,2vw,22px);line-height:1.55;color:var(--mute)}
+.buy{display:inline-flex;align-items:center;gap:14px;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:18px 28px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(201,109,34,.7);transition:background .2s}
+.buy:hover{background:var(--orange-d)}
+.buy .p{background:#fff;color:var(--orange-d);border-radius:999px;padding:3px 12px;font-size:16px}
+.note{font-size:15px;color:var(--mute);margin-top:14px}
+section{padding-block:92px}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--sky) 100%);padding-block:54px 70px;overflow:hidden}
+.hero .wrap{display:grid;gap:46px;align-items:center}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.05fr 1fr}}
+.hero h1{margin-bottom:22px}
+.hero .lead{margin-bottom:30px;max-width:520px}
+.stage{position:relative;min-height:360px}
+.stage .photo{border-radius:26px;overflow:hidden;aspect-ratio:900/640;max-width:100%}
+.stage .photo img{width:100%;height:100%;object-fit:cover}
+.stage .book{position:absolute;right:-6px;bottom:-34px;width:40%;min-width:150px;border-radius:8px;box-shadow:0 30px 50px -18px rgba(18,56,68,.6);transform:rotate(4deg)}
+
+/* QUESTIONS: photo strip */
+.qs{background:var(--teal);color:#fff}
+.qs h2{color:#fff;margin-bottom:36px}
+.qgrid{display:grid;gap:22px}
+@media(min-width:760px){.qgrid{grid-template-columns:repeat(4,1fr)}}
+.qgrid figure{margin:0}
+.qgrid img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.qgrid figcaption{margin-top:12px;font-weight:600;font-size:18px;line-height:1.35;color:#e8f3f5}
+
+/* DAY ANATOMY */
+.day .wrap{display:grid;gap:50px;align-items:center}
+@media(min-width:960px){.day .wrap{grid-template-columns:420px 1fr}}
+.day .page{border-radius:10px;box-shadow:0 30px 60px -30px rgba(18,56,68,.55);max-width:420px;justify-self:center}
+.parts{margin:28px 0 0;padding:0;list-style:none}
+.parts li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.parts li:last-child{border-bottom:1px solid var(--line)}
+.parts .ic{width:44px;height:44px;border-radius:12px;background:var(--sand);display:grid;place-items:center;font-size:22px}
+.parts b{display:block;font-size:19px}
+.parts span{color:var(--mute)}
+
+/* SECRET PHRASE — the memorable device */
+.secret{background:var(--sand)}
+.secret .wrap{text-align:center}
+.letters{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:34px auto 22px;max-width:760px}
+.letters span{width:38px;height:46px;border-radius:8px;background:#fff;border:2px solid #f0d2b6;display:grid;place-items:center;font-family:Bricolage;font-weight:800;font-size:22px;color:var(--teal)}
+.letters span.on{background:var(--orange);border-color:var(--orange);color:#fff}
+.letters span.q{color:#e4b58e}
+.secret .lead{margin:0 auto;max-width:600px}
+
+/* LEARN */
+.learn .wrap{display:grid;gap:50px}
+@media(min-width:900px){.learn .wrap{grid-template-columns:1fr 1fr;gap:80px}}
+.tick{margin:22px 0 0;padding:0;list-style:none}
+.tick li{padding:12px 0 12px 34px;position:relative;border-top:1px solid var(--line);font-size:18.5px}
+.tick li:last-child{border-bottom:1px solid var(--line)}
+.tick li:before{content:"";position:absolute;left:4px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--orange)}
+.extra li:before{background:var(--teal)}
+
+/* INSIDE */
+.inside{padding-top:20px}
+.pages{position:relative;height:clamp(360px,52vw,560px);margin-top:44px}
+.pages img{position:absolute;top:0;width:min(34%,330px);border-radius:8px;box-shadow:0 30px 50px -22px rgba(18,56,68,.55);transition:transform .35s ease}
+.pages .l{left:50%;transform:translateX(-128%) rotate(-7deg) translateY(30px)}
+.pages .r{left:50%;transform:translateX(28%) rotate(7deg) translateY(30px)}
+.pages .c{left:50%;transform:translateX(-50%);width:min(38%,370px);z-index:2}
+.pages:hover .l{transform:translateX(-138%) rotate(-9deg) translateY(30px)}
+.pages:hover .r{transform:translateX(38%) rotate(9deg) translateY(30px)}
+@media (prefers-reduced-motion:reduce){.pages img{transition:none}}
+@media(max-width:640px){.pages{height:auto;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+ .pages img,.pages .c,.pages .l,.pages .r{position:static;transform:none;width:72%;flex:none;scroll-snap-align:center}}
+
+/* OFFER */
+.offer{background:var(--teal-d);color:#fff}
+.offer .wrap{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.offer .wrap{grid-template-columns:330px 1fr}}
+.offer img{border-radius:8px;max-width:330px;justify-self:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);transform:rotate(-3deg)}
+.offer h2{color:#fff}
+.amt{font-family:Bricolage;font-weight:800;font-size:84px;line-height:1;margin:16px 0 4px;color:#fff}
+.offer .facts{color:#b9d3d9;font-size:16.5px;margin-bottom:26px}
+.offer .note{color:#9fbec5}
+.guar{display:flex;gap:18px;align-items:center;margin-top:30px;padding-top:26px;border-top:1px solid rgba(255,255,255,.15)}
+.seal{flex:none;width:86px;height:86px;border-radius:50%;background:var(--orange);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Bricolage;font-weight:800;font-size:34px;line-height:1;transform:rotate(-8deg)}
+.seal small{font-size:14px;font-weight:700}
+.guar p{margin:0;color:#d5e6e9}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);padding:20px 0}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{font-weight:600;font-size:20px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-family:Bricolage;font-size:28px;line-height:1;color:var(--orange)}
+.faq details[open] summary:after{content:"–"}
+.faq p{color:var(--mute);margin:12px 0 0}
+
+.end{position:relative;color:#fff;text-align:center;padding-block:120px;background:#123844 url(img/perro_masaje.jpg) center/cover}
+.end:before{content:"";position:absolute;inset:0;background:rgba(18,56,68,.72)}
+.end .wrap{position:relative}
+.end h2{color:#fff;margin:0 auto 26px;max-width:700px}
+footer{background:var(--teal-d);color:#89aab2;text-align:center;font-size:13.5px;padding-block:30px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:rgba(242,246,246,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.bar a{display:block;text-align:center;background:var(--orange);color:#fff;font-weight:700;text-decoration:none;padding:15px;border-radius:999px}
+@media(max-width:899px){.bar{display:block}body{padding-bottom:80px}section{padding-block:70px}.stage .book{bottom:-24px}}
+</style>
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','2260347131428457');fbq('track','PageView');fbq('track','ViewContent',{content_name:'El idioma secreto de tu perro',value:17,currency:'EUR'});
 document.addEventListener('click',function(e){var a=e.target.closest('a[href*="pay.hotmart.com"]');if(a){fbq('track','InitiateCheckout',{content_name:'El idioma secreto de tu perro',value:17,currency:'EUR'});}});
 </script>
-<!-- End Meta Pixel -->
 </head>
 <body>
-<div class="top">🐾 Libro interactivo · PDF para el móvil o para imprimir · Letra grande</div>
 
 <header class="hero">
-  <img src="img/perro_hero.jpg" alt="Perro feliz junto a su dueña">
-  <div class="wrap">
-    <h1>¿Sabes de verdad lo que siente tu perro?</h1>
-    <p>Descubre en 30 días lo que todavía no sabes de tu mejor amigo: qué le dice su cola, qué le estresa sin que te des cuenta y cómo saber si es feliz.</p>
-    <a class="btn" href="#comprar">Quiero empezar el camino</a>
-    <div class="mini">Pago único de 17 € · Descarga inmediata · Garantía de 7 días</div>
+ <div class="wrap">
+  <div>
+   <h1>¿Sabes de verdad lo que siente tu perro?</h1>
+   <p class="lead">En 30 días descubres lo que todavía no sabes de tu mejor amigo: qué te dice con la cola, qué le estresa sin que te des cuenta y cómo saber si es feliz.</p>
+   <a class="buy" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Quiero descubrirlo</a>
+   <p class="note">Libro en PDF con fotos y letra grande. Descarga inmediata. Garantía de 7 días.</p>
   </div>
+  <div class="stage">
+   <div class="photo"><img src="img/perro_hero.jpg" alt="Una mujer sonriente acaricia a su cachorro en el sofá"></div>
+   <img class="book" src="img/pag1-01.jpg" alt="Portada del libro El idioma secreto de tu perro">
+  </div>
+ </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <h2>¿Te has preguntado alguna vez…?</h2>
-    <div class="qs">
-      <div class="q"><span>🐶</span>¿Por qué bosteza o se lame cuando le riñes?</div>
-      <div class="q"><span>👃</span>¿Cómo ve y cómo huele el mundo que le rodea?</div>
-      <div class="q"><span>⚠️</span>¿Qué alimentos de casa son peligrosos para él?</div>
-      <div class="q"><span>💛</span>¿Cómo reconocer el estrés, la tristeza o el dolor?</div>
-    </div>
+<section class="qs">
+ <div class="wrap">
+  <h2 class="read">Seguro que te lo has preguntado alguna vez</h2>
+  <div class="qgrid">
+   <figure><img src="img/perro_caricia.jpg" alt="Perro mirando a su dueño mientras lo acaricia"><figcaption>¿Por qué bosteza o se lame cuando le riñes?</figcaption></figure>
+   <figure><img src="img/perro_olfato.jpg" alt="Perro oliendo unas flores"><figcaption>¿Cómo ve y cómo huele el mundo que le rodea?</figcaption></figure>
+   <figure><img src="img/perro_juego.jpg" alt="Perro jugando en casa con un juguete"><figcaption>¿Qué alimentos de casa son peligrosos para él?</figcaption></figure>
+   <figure><img src="img/perro_masaje.jpg" alt="Perro recibiendo un masaje relajado"><figcaption>¿Cómo reconocer el estrés, la tristeza o el dolor?</figcaption></figure>
   </div>
+ </div>
 </section>
 
-<section class="alt">
-  <div class="wrap split">
-    <img class="round" src="img/perro_caricia.jpg" alt="Caricia a un perro">
-    <div>
-      <h2 style="text-align:left">Un camino de 30 días, paso a paso</h2>
-      <p><b>El idioma secreto de tu perro</b> es un libro interactivo dividido en 6 estaciones. Cada día descubres algo nuevo sobre tu perro, en pocos minutos y sin teoría aburrida.</p>
-      <p>Las respuestas de cada reto forman una <b>frase secreta</b> que descubrirás el último día.</p>
-    </div>
+<section class="day">
+ <div class="wrap">
+  <img class="page" src="img/pag11-11.jpg" alt="Página de un día del libro: lección, ¿sabías que?, idea práctica y reto">
+  <div>
+   <h2>Un tema corto cada día, durante 30 días</h2>
+   <p class="lead" style="margin-top:16px">El libro está dividido en 6 estaciones. Cada día lees unos minutos y aplicas algo nuevo con tu perro, sin teoría aburrida.</p>
+   <ul class="parts">
+    <li><div class="ic">📖</div><div><b>Una lección</b><span>Corta y clara, para leer en pocos minutos.</span></div></li>
+    <li><div class="ic">💡</div><div><b>¿Sabías que…?</b><span>Una curiosidad real sobre tu perro.</span></div></li>
+    <li><div class="ic">🏡</div><div><b>Una idea práctica</b><span>Algo sencillo para mejorar su vida en casa.</span></div></li>
+    <li><div class="ic">🧩</div><div><b>Un reto</b><span>Con una letra para la frase secreta.</span></div></li>
+   </ul>
   </div>
+ </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>Cada día incluye</h2>
-    <div class="days">
-      <div class="day"><b>📖</b>Una lección<br><small>corta y clara</small></div>
-      <div class="day"><b>💡</b>¿Sabías que…?<br><small>curiosidades reales</small></div>
-      <div class="day"><b>🏡</b>Una idea práctica<br><small>para mejorar su vida</small></div>
-      <div class="day"><b>🧩</b>Un reto<br><small>y una letra secreta</small></div>
-    </div>
+<section class="secret">
+ <div class="wrap">
+  <h2 class="read" style="margin:0 auto">Cada reto te da una letra de la frase secreta</h2>
+  <div class="letters" aria-hidden="true">
+   <span class="on">✓</span><span class="on">✓</span><span class="on">✓</span><span>?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span><span class="q">?</span>
   </div>
+  <p class="lead">Treinta días, treinta letras. El último día descubres el mensaje completo junto a tu perro.</p>
+ </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Así es por dentro</h2>
-    <p class="lead">Diseño cuidado, fotos y letra grande. Se lee cómodo en el móvil y queda precioso impreso.</p>
-    <div class="pages">
-      <img src="img/pag1-01.jpg" alt="Portada interior">
-      <img src="img/pag7-07.jpg" alt="Estación 1: Bienvenido a casa">
-      <img src="img/pag11-11.jpg" alt="Día 4: Horarios y rutinas">
-    </div>
+<section class="learn">
+ <div class="wrap">
+  <div>
+   <h2>Lo que vas a descubrir</h2>
+   <ul class="tick">
+    <li>Cómo huele y cómo ve tu perro</li>
+    <li>Qué significa cada movimiento de su cola</li>
+    <li>Por qué bosteza, se lame o se sacude</li>
+    <li>Los alimentos de casa que son peligrosos</li>
+    <li>Cómo darle un masaje que le relaje</li>
+    <li>Cómo reconocer estrés, tristeza o dolor</li>
+   </ul>
   </div>
+  <div>
+   <h2>Y además</h2>
+   <ul class="tick extra">
+    <li>Una medalla al terminar cada estación</li>
+    <li>La ficha de tu perro para rellenar</li>
+    <li>La promesa del cuidador</li>
+    <li>Guías rápidas para pegar en la nevera</li>
+    <li>Información comprobada en fuentes veterinarias</li>
+   </ul>
+  </div>
+ </div>
 </section>
 
-<section>
-  <div class="wrap split">
-    <div>
-      <h2 style="text-align:left">Lo que vas a descubrir</h2>
-      <ul class="check">
-        <li>Cómo huele y cómo ve tu perro</li>
-        <li>Qué significa cada movimiento de su cola</li>
-        <li>Por qué bosteza, se lame o se sacude</li>
-        <li>Los alimentos de casa que son peligrosos</li>
-        <li>Cómo darle un masaje que le relaje</li>
-        <li>Cómo reconocer estrés, tristeza o dolor</li>
-      </ul>
-    </div>
-    <img class="round" src="img/perro_olfato.jpg" alt="Perro olfateando">
+<section class="inside">
+ <div class="wrap">
+  <h2>Dentro del libro encontrarás</h2>
+  <p class="lead" style="margin-top:14px">Páginas llenas de fotos, retos y consejos para disfrutar con tu perro, con letra grande para leer cómodo en el móvil o imprimirlo.</p>
+  <div class="pages">
+   <img class="l" src="img/pag7-07.jpg" alt="Inicio de la estación Bienvenido a casa">
+   <img class="r" src="img/pag11-11.jpg" alt="Página del día 4, Horarios y rutinas">
+   <img class="c" src="img/pag1-01.jpg" alt="Portada del libro">
   </div>
+ </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Y además</h2>
-    <ul class="check" style="max-width:560px;margin:0 auto">
-      <li>Una medalla al terminar cada estación</li>
-      <li>Ficha de tu perro para rellenar</li>
-      <li>La promesa del cuidador</li>
-      <li>Guías rápidas para pegar en la nevera</li>
-      <li>Información comprobada en fuentes veterinarias</li>
-    </ul>
+<section class="offer" id="comprar">
+ <div class="wrap">
+  <img src="img/pag1-01.jpg" alt="Portada de El idioma secreto de tu perro">
+  <div>
+   <h2>El idioma secreto de tu perro</h2>
+   <p style="color:#d5e6e9;margin-top:8px">30 días para descubrir lo que aún no sabes de tu mejor amigo</p>
+   <div class="amt">17 €</div>
+   <p class="facts">Pago único, IVA incluido. PDF de 55 páginas para el móvil, la tablet o para imprimir.</p>
+   <a class="buy" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Sí, quiero el libro</a>
+   <p class="note">Pago seguro con tarjeta a través de Hotmart. Recibes el acceso en tu correo.</p>
+   <div class="guar"><div class="seal">7<small>días</small></div><p><b style="color:#fff">Garantía de 7 días.</b> Si no te convence, pides la devolución desde Hotmart y te devolvemos el dinero.</p></div>
   </div>
+ </div>
 </section>
 
-<section id="comprar">
-  <div class="wrap">
-    <div class="offer">
-      <img src="img/p1.jpg" alt="Portada de El idioma secreto de tu perro">
-      <h2>El idioma secreto de tu perro</h2>
-      <p style="margin:0;color:var(--muted)">30 días para descubrir lo que aún no sabes de tu mejor amigo</p>
-      <div class="price">17 €</div>
-      <div style="color:var(--muted);font-size:15px">Pago único · IVA incluido · PDF de 55 páginas</div>
-      <ul class="check">
-        <li>Acceso inmediato después del pago</li>
-        <li>Para leer en el móvil, la tablet o imprimir</li>
-        <li>Pago seguro con tarjeta a través de Hotmart</li>
-      </ul>
-      <a class="btn block" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Sí, quiero El idioma secreto de tu perro</a>
-      <div class="guar"><span>🛡️</span><div><b>Garantía de 7 días.</b> Si no te convence, pides la devolución desde Hotmart y te devolvemos el dinero.</div></div>
-    </div>
-  </div>
+<section class="faq">
+ <div class="wrap read">
+  <h2 style="margin-bottom:26px">Preguntas frecuentes</h2>
+  <details><summary>¿Cómo lo recibo?</summary><p>Justo después del pago, Hotmart te envía un correo con el acceso para descargar el PDF. También lo tienes siempre en hotmart.com, en «Mis compras».</p></details>
+  <details><summary>¿Sirve para cualquier perro?</summary><p>Sí. Es para cualquier raza y edad, tanto si acaba de llegar a casa como si lleva años contigo.</p></details>
+  <details><summary>¿Necesito saber de adiestramiento?</summary><p>No. Está escrito de forma sencilla, con un tema corto cada día.</p></details>
+  <details><summary>¿Sustituye al veterinario?</summary><p>No. Es una guía para conocer y cuidar mejor a tu perro. Ante cualquier problema de salud, consulta siempre con tu veterinario.</p></details>
+  <details><summary>¿Y si no me gusta?</summary><p>Tienes 7 días de garantía para pedir la devolución.</p></details>
+ </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Preguntas frecuentes</h2>
-    <details><summary>¿Cómo lo recibo?</summary><p>Justo después del pago, Hotmart te envía un correo con el acceso para descargar el PDF. También lo tienes siempre en hotmart.com, en «Mis compras».</p></details>
-    <details><summary>¿Sirve para cualquier perro?</summary><p>Sí. Es para cualquier raza y edad, tanto si acaba de llegar a casa como si lleva años contigo.</p></details>
-    <details><summary>¿Necesito saber de adiestramiento?</summary><p>No. Está escrito de forma sencilla, con un tema corto cada día.</p></details>
-    <details><summary>¿Sustituye al veterinario?</summary><p>No. Es una guía para conocer y cuidar mejor a tu perro. Ante cualquier problema de salud, consulta siempre con tu veterinario.</p></details>
-    <details><summary>¿Y si no me gusta?</summary><p>Tienes 7 días de garantía para pedir la devolución.</p></details>
-  </div>
+<section class="end">
+ <div class="wrap">
+  <h2>Él te lo da todo. Dedícale 30 días.</h2>
+  <a class="buy" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Quiero descubrirlo</a>
+ </div>
 </section>
+<footer><div class="wrap">Ediciones Faro Claro. Pago seguro procesado por Hotmart.<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</div></footer>
 
-<section>
-  <div class="wrap" style="text-align:center">
-    <img class="round" src="img/perro_parque.jpg" alt="Perro feliz en el parque" style="margin:0 auto 22px">
-    <h2>Él te lo da todo. Dedícale 30 días.</h2>
-    <a class="btn" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Empezar el camino por 17 €</a>
-  </div>
-</section>
-
-<footer>Ediciones Faro Claro · Pago seguro procesado por Hotmart<br>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</footer>
-
-<div class="sticky"><b>17 €</b><a class="btn" href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Comprar ahora</a></div>
+<div class="bar"><a href="https://pay.hotmart.com/P108189340A?off=1bmj8m1f&checkoutMode=10">Quiero descubrirlo</a></div>
 </body></html>
